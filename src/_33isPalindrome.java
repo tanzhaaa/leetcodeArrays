@@ -1,4 +1,4 @@
-public class isPalindrome {
+public class _33isPalindrome {
     public boolean isPalindrome(int x){
         boolean result = true;
         if(x<0)
@@ -24,7 +24,7 @@ public class isPalindrome {
     }
 
     public static void main(String[] args) {
-        isPalindrome r = new isPalindrome();
+        _33isPalindrome r = new _33isPalindrome();
         System.out.println(r.isPalindrome(121));
         System.out.println(r.isPalindrome(-121));
         System.out.println(r.isPalindrome(122));

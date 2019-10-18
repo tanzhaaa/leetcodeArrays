@@ -10,7 +10,7 @@ import java.util.List;
 
 
 
-public class threeSum_correct {
+public class _15threeSum_correct {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> ls = new ArrayList<>();

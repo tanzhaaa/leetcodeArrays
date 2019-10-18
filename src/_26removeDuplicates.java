@@ -1,4 +1,4 @@
-public class removeDuplicates {
+public class _26removeDuplicates {
     public static int removeDuplicates(int[] nums) {
         int len = 0;
         int i = 1;

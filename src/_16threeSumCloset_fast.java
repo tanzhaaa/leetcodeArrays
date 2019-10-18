@@ -7,7 +7,7 @@ import java.util.Arrays;
 * 内层while循环
 * 时间复杂度为 O（n^2）
 * */
-public class threeSumCloset_fast {
+public class _16threeSumCloset_fast {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int min = Integer.MAX_VALUE;
@@ -37,7 +37,7 @@ public class threeSumCloset_fast {
 
     public static void main(String[] args) {
         int[] ls = new int[]{-1, 2, 1, -4};
-        threeSumCloset_fast r = new threeSumCloset_fast();
+        _16threeSumCloset_fast r = new _16threeSumCloset_fast();
         System.out.println(r.threeSumClosest(ls,1));
     }
 }

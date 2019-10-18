@@ -1,4 +1,4 @@
-public class maxArea_slow {
+public class _18maxArea_slow {
     public static int maxArea(int[] height){
         int leftIndex = 0;
         int rightIndex;

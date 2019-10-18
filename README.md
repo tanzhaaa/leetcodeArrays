@@ -1,3 +1,3 @@
 # leetcodeArrays
-leetcode上问题的解答：
-针对数组问题
+leetcode上标签为数组的解答：
+针对数组问题的解答

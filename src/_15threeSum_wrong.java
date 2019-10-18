@@ -7,7 +7,7 @@ import java.util.List;
 * 3.无法处理数组重复问题
 * */
 
-public class threeSum_wrong {
+public class _15threeSum_wrong {
     public List<List<Integer>> threeSum(int[] nums) {
         List<Integer> list = new ArrayList<>();
         List<List<Integer>> listOfList = new ArrayList<>();

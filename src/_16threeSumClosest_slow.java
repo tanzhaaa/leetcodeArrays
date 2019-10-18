@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class threeSumClosest_slow {
+public class _16threeSumClosest_slow {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int min = Integer.MAX_VALUE;
@@ -22,7 +22,7 @@ public class threeSumClosest_slow {
 
     public static void main(String[] args) {
         int[] ls = new int[]{-1, 2, 1, -4};
-        threeSumClosest_slow r = new threeSumClosest_slow();
+        _16threeSumClosest_slow r = new _16threeSumClosest_slow();
         System.out.println(r.threeSumClosest(ls,1));
     }
 }

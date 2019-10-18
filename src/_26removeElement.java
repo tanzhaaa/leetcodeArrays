@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class removeElement {
+public class _26removeElement {
     public static int removeElement(int[] nums, int val) {
         int i = 0;
         int count = 0;
