@@ -28,21 +28,29 @@ import java.util.List;
 *
 * */
 public class _39combinationSum {
-    static List<List<Integer>> combinationSum(int[] candidates, int target) {
+    public static List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
+        //排序
         Arrays.sort(candidates);
-        //System.out.println(candidates);
-        backtrack(candidates, target, res, 0, new ArrayList<Integer>());
+        backtrack(candidates, target, res, 0, new ArrayList<>());
         return res;
+    }
+    private static void backtrack(int[] candidates, int target, List<List<Integer>> res, int i, ArrayList<Integer> tmp_list) {
+        //递归结束条件
+        //当总和超过target
+        if (target < 0) return;
+        //和为target将这组答案加入返回的数组
+        if (target == 0) {
+            res.add(new ArrayList<>(tmp_list));
+            return;
         }
 
-
-    private static void backtrack(int[] candidates, int target, List<List<Integer>> res, int i, ArrayList<Integer> tmp_list) {
+        //中间节点，继续向下递归
         for (int start = i; start < candidates.length; start++) {
-            //System.out.println(start);
+            //当前节点入栈
             tmp_list.add(candidates[start]);
-            //System.out.println(tmp_list);
             backtrack(candidates, target - candidates[start], res, start, tmp_list);
+            //当前节点退栈
             tmp_list.remove(tmp_list.size() - 1);
         }
     }

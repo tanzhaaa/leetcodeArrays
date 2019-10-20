@@ -9,6 +9,12 @@ import java.util.List;
 * */
 
 
+/*
+* 和39题区别在于：
+* 本题限制了是N个数字的总和，
+* 中间只会有有限个for循环
+* */
+
 
 public class _15threeSum_correct {
     public List<List<Integer>> threeSum(int[] nums) {
